@@ -17,8 +17,13 @@
  * something();
  * ```
  */
-declare module 'module-name' {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const whatever: any;
-  export = whatever;
+declare module 'golomb' {
+  class Golomb {
+    static fromRaw(raw: Buffer): Golomb;
+
+    matchAny(key: Buffer, items: Buffer[]): boolean;
+    match(key: Buffer, item: Buffer): boolean;
+  }
+
+  export = Golomb;
 }
