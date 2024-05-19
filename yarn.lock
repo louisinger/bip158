@@ -1033,14 +1033,13 @@ base64-js@^1.3.1:
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
   integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
-bcrypto@~5.0.0:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/bcrypto/-/bcrypto-5.0.4.tgz#711a67450f131fcb517824a4d496ccb83fa96fc9"
-  integrity sha512-5vNoWRFU7cJ3hjhL2O/1Q1U/L/+e2+eDkjUChRAolfrVyeyZcwV3qTTQYn+XA1eUzrZbSZaaH5ZtvJOTwUPh6A==
+bcrypto@^5.5.2:
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/bcrypto/-/bcrypto-5.5.2.tgz#7568186b31a1cfb142df50b22a87309287708e96"
+  integrity sha512-k3PF755oJM0+25iOVuraNedF5XneykxRwl+oBoMeQPfYee4qX8hHQhKCsNZWLthNYgi41GH2ysopd/8sDQDhEw==
   dependencies:
-    bufio "~1.0.6"
-    loady "~0.0.1"
-    nan "^2.14.0"
+    bufio "~1.0.7"
+    loady "~0.0.5"
 
 binary-extensions@^2.0.0:
   version "2.3.0"
@@ -1118,7 +1117,7 @@ buffer@^5.5.0:
     base64-js "^1.3.1"
     ieee754 "^1.1.13"
 
-bufio@~1.0.6:
+bufio@~1.0.6, bufio@~1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/bufio/-/bufio-1.0.7.tgz#b7f63a1369a0829ed64cc14edf0573b3e382a33e"
   integrity sha512-bd1dDQhiC+bEbEfg56IdBv7faWa6OipMs/AFFFvtFnB3wAYjlwQpQRZ0pm6ZkgtfL0pILRXhKxOiQj6UzoMR7A==
@@ -2868,12 +2867,11 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-golomb@^1.2.0:
+"golomb@https://github.com/louisinger/golomb.git":
   version "1.2.0"
-  resolved "https://registry.yarnpkg.com/golomb/-/golomb-1.2.0.tgz#f173c843db207f3d241b68652a77271563e9922f"
-  integrity sha512-sfEZmT9Mi7XMIYYAm9tWBQf83V3jrw+PAnNeIZtvgdcij3zIQweLX6e1/+cqRXdhxHB0Zjy7gUpEXoaDpWuGkg==
+  resolved "https://github.com/louisinger/golomb.git#146743bf69ee23a2c33572ec4ebf04ed1ca8d94c"
   dependencies:
-    bcrypto "~5.0.0"
+    bcrypto "^5.5.2"
     bsert "~0.0.10"
     bufio "~1.0.6"
     n64 "~0.2.10"
@@ -3679,7 +3677,7 @@ load-json-file@^5.2.0:
     strip-bom "^3.0.0"
     type-fest "^0.3.0"
 
-loady@~0.0.1:
+loady@~0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/loady/-/loady-0.0.5.tgz#b17adb52d2fb7e743f107b0928ba0b591da5d881"
   integrity sha512-uxKD2HIj042/HBx77NBcmEPsD+hxCgAtjEWlYNScuUjIsh/62Uyu39GOR68TBR68v+jqDL9zfftCWoUo4y03sQ==
@@ -3991,11 +3989,6 @@ n64@~0.2.10:
   version "0.2.10"
   resolved "https://registry.yarnpkg.com/n64/-/n64-0.2.10.tgz#e5831073dd527e6934b880231a43f3a8e36c096a"
   integrity sha512-uH9geV4+roR1tohsrrqSOLCJ9Mh1iFcDI+9vUuydDlDxUS1UCAWUfuGb06p3dj3flzywquJNrGsQ7lHP8+4RVQ==
-
-nan@^2.14.0:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.19.0.tgz#bb58122ad55a6c5bc973303908d5b16cfdd5a8c0"
-  integrity sha512-nO1xXxfh/RWNxfd/XPfbIfFk5vgLsAxUR9y5O0cHMJu/AW9U95JLXqthYHjEp+8gQ5p96K9jUp8nbVOxCdRbtw==
 
 natural-compare@^1.4.0:
   version "1.4.0"
